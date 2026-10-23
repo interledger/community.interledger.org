@@ -1,0 +1,29 @@
+# Netlify _redirects file syntax: https://docs.netlify.com/manage/routing/redirects/overview/
+# Lines that begin with `#` are ignored
+# 1 redirect per line in the format of:
+# /old/path/here	https://interledger.org/new/path	301
+
+# Top level URLs
+/	https://interledger.org/	301
+#TODO:	/code-of-conduct	https://interledger.org/TODO	301
+#TODO:	/participation	https://interledger.org/TODO	301
+#TODO: /page/aipoliciesguidelines	https://interledger.org/TODO	301
+/privacy	https://interledger.org/privacy-policy/	301
+/terms	https://interledger.org/privacy-policy/	301
+/ilfgrantopportunities*	https://interledger.org/grant/our-grantmaking/ 301
+https://communityinviter.com/apps/interledger/interledger-working-groups-slack
+#TODO: replace the category in the URL to match the tag used on the interledger.org blog after imported:	/julaireh/series/*	https://interledger.org/blog/category/digital-money/ 301
+
+# Example: Grantee: Jeremiah Lee
+#TODO Change redirect target to Jeremiah’s grant report pages once they are available on interledger.org
+/jeremiahlee/web-monetization-on-the-social-web-ilf-grant-final-report-4i4k	https://interledger.org/grantee-directory/	301
+/jeremiahlee/web-monetization-in-the-fediverse-ilf-grant-progress-report-1-37c7	https://interledger.org/grantee-directory/	301
+
+# Example: Jeremiah moved his Forem articles to his personal website
+/jeremiahlee/interledger-joins-the-fediverse-30fi	https://www.jeremiahlee.com/posts/interledger-open-payments-huddle/	301
+/jeremiahlee/interledger-launches-a-mastodon-instance-3k0	https://www.jeremiahlee.com/posts/interledger-social/	301
+/jeremiahlee/research-id-like-to-see-funded-3j7k	https://www.jeremiahlee.com/posts/interledger-research-needed/	301
+
+# THIS RULE MUST BE LAST
+# Redirect any unmatched path to a 404 page for analytics
+/*	https://interledger.org/404/community/:splat302
