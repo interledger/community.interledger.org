@@ -25,5 +25,5 @@
 /jeremiahlee/research-id-like-to-see-funded-3j7k    https://www.jeremiahlee.com/posts/interledger-research-needed/    301
 
 # THIS RULE MUST BE LAST
-# Redirect any unmatched path to a 404 page for analytics
-/*    https://interledger.org/404/community/:splat302
+# Redirect any unmatched path to the Forem static archive
+/*    https://community-archive.interledger.org/:splat    302
